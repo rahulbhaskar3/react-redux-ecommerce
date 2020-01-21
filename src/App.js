@@ -8,9 +8,7 @@ import Product from './components/products';
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Product/>
-      <Footer/>
+      
     </div>
   );
 }
