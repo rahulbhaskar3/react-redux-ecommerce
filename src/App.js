@@ -1,18 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { connect} from 'react-redux'
 import Header from './components/header';
 import Footer from './components/footer';
 import Product from './components/products';
 
-function App() {
+
+const App = (props) => {
   return (
     <div className="App">
       <Header/>
+      <p>{props.count}</p>
+      <button onClick={props.increment}>+</button>
+      <button  onClick={props.decrement}>-</button>
       <Product/>
       <Footer/>
     </div>
   );
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    count: state
+   };
+  }
+function mapDispatchToProps(dispatch) {
+  return {
+    increment: () => dispatch({type: 'INCREMENT'}),
+    decrement: () => dispatch({type: 'DECREMENT'})
+  };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(App);
