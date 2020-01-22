@@ -3,15 +3,13 @@ import { connect} from 'react-redux'
 import Header from './components/header';
 import Footer from './components/footer';
 import Product from './components/products';
+// import { increment, decrement } from './actions/products'
 
 
 const App = (props) => {
   return (
     <div className="App">
       <Header/>
-      <p>{props.count}</p>
-      <button onClick={props.increment}>+</button>
-      <button  onClick={props.decrement}>-</button>
       <Product/>
       <Footer/>
     </div>
