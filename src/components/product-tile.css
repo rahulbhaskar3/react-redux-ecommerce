@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    background-color: #fff;
+    color: #444;
+    margin-left: 7%;
+  }
+  
+  .box {
+    background-color: purple;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+
+  .product-image {
+      height: 230px;
+      width: 280px;
+  }
