@@ -4,13 +4,10 @@ import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 // const history = createBrowserHistory()
 
 const Navigation = (props) => {
-    // console.log(history.location.pathname);
-    // const homeClass = history.location.pathname === "/" ? "nav-item active" : "nav-item";
-    // const productsClass = history.location.pathname.match(/^\/products/) ? "nav-item active" : "nav-item";
     
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand" href="javascript:void(0)">Demo App</a>
+            <NavLink className="navbar-brand" to="/">React App</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
