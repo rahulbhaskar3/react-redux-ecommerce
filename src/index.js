@@ -7,14 +7,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import allReducers from "./reducers/allReducers";
 import { createLogger } from 'redux-logger';
-import routes from  './config/route';
+import Routers from './config/route'
 
 const logger = createLogger();
 const store = createStore(allReducers, applyMiddleware(logger));
     
 render(
     <Provider store={store}>
-      <App />
+      <Routers />
     </Provider>,
     document.getElementById('root')
   );

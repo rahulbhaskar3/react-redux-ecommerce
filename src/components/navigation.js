@@ -3,7 +3,7 @@ import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 // import { createBrowserHistory } from "history";
 // const history = createBrowserHistory()
 
-const navigation = (props) => {
+const Navigation = (props) => {
     // console.log(history.location.pathname);
     // const homeClass = history.location.pathname === "/" ? "nav-item active" : "nav-item";
     // const productsClass = history.location.pathname.match(/^\/products/) ? "nav-item active" : "nav-item";
@@ -28,4 +28,4 @@ const navigation = (props) => {
     );
 }
 
-export default navigation;
+export default Navigation;

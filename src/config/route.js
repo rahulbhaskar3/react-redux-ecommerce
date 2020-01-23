@@ -6,14 +6,15 @@ import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 import Products from '../components/products';
 
-const routes = (
-    <Router>
-        <Header />  
-        <Navigation />
-        <Route exact path="/" component={App} />
-        <Route exact path="/products" component={Products} />
-        <Footer />
-    </Router>
-);
+const Routes = () => {
+    return (
+        <Router>
+            <Navigation />
+            <Route exact path="/" component={App} />
+            <Route exact path="/products" component={Products} />
+            <Footer />
+        </Router>
+    );    
+}
 
-export default routes;
+export default Routes;
