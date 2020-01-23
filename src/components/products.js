@@ -1,17 +1,21 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import products from '../api/products.json'
 
-
 const product = (props) => {
-    const productList = products.map(pro => {
-    return (<li>{pro.name}</li>);
+    const productList = products.map(product => {
+        return (
+            <div key={product.id} className="card" style={{ width: '18rem' }}>
+                <img className="card-img-top" src={product.imageUrl} alt={product.name}></img>
+                <div className="card-body">
+                    <h5 className="card-title">{product.name}</h5>
+                    <p className="card-text">{product.content}</p>
+                </div>
+            </div>
+        );
     });
     return(
-        <div>
-            <ul>
-                {productList}
-            </ul>
+        <div className="row">
+            {productList}
         </div>
     );
 }
