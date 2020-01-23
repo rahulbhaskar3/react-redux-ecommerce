@@ -4,6 +4,7 @@ import ProductTile from './product-tile';
 import './product-tile.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { getProduct } from '../actions/actions';
+import products from '../api/products.json'
 
 const Product = (props) => {
     const productListRedux = useSelector(state => state.products);
@@ -30,13 +31,9 @@ const Product = (props) => {
     }
 
     return(
-        <div>
-            <button className="btn btn-primary" onClick={() => dispatch(getProduct())}>Load Products</button>
-            <div className="wrapper">
-                {productList}
-            </div>
+        <div className="row">
+            {productList}
         </div>
     );
 }
-
 export default Product;
