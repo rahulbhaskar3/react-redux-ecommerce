@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 // import { createBrowserHistory } from "history";
 // const history = createBrowserHistory()
 
 const Navigation = (props) => {
-    
+    const bagItemCount = useSelector(state => state.bagItem.bagItem.length);
     return(
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <NavLink className="navbar-brand" to="/">React App</NavLink>
@@ -20,7 +21,7 @@ const Navigation = (props) => {
                     <NavLink className="nav-link" to="/products">Products</NavLink>
                     </li>
                     <li activeClassName="active" className="nav-item">						
-                    <NavLink className="nav-link" to="/bag">Bag(0)</NavLink>
+                    <NavLink className="nav-link" to="/bag">Bag({bagItemCount})</NavLink>
                     </li>						  
                 </ul>				
             </div>  		  
