@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 
 const footer = (props) => {
     return(
-        <div>
+        <div className="App">
             <h1>This is the footer</h1>
         </div>
     );

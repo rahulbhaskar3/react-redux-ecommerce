@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App = (props) => {
   return (
     <div className="App">
-      
+      <h1>Welcome to home page</h1>
     </div>
   );
 };

@@ -12,13 +12,20 @@ export const decrement = () => {
 
 export const getProduct = () => {
     return {
-        type: 'GET-PRODUCTS'
+        type: 'GET_PRODUCTS'
     }
 }
 
 export const deleteProduct = (productId) => {
     return {
-        type: 'DELETE-PRODUCT',
+        type: 'DELETE_PRODUCT',
         payload: productId
+    }
+}
+
+export const addToBag = (product) => {
+    return {
+        type: 'ADD_TO_BAG',
+        payload: [product]
     }
 }

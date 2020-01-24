@@ -18,7 +18,10 @@ const Navigation = (props) => {
                     </li>
                     <li activeClassName="active" className="nav-item">						
                     <NavLink className="nav-link" to="/products">Products</NavLink>
-                    </li>					  
+                    </li>
+                    <li activeClassName="active" className="nav-item">						
+                    <NavLink className="nav-link" to="/bag">Bag(0)</NavLink>
+                    </li>						  
                 </ul>				
             </div>  		  
 		</nav>	
