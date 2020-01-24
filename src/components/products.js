@@ -30,7 +30,7 @@ const Product = (props) => {
     }
 
     return(
-        <div>
+        <div className="App">
             <button className="btn btn-primary" onClick={() => dispatch(getProduct())}>Load Products</button>
             <div className="wrapper">
                 {productList}
